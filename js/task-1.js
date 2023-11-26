@@ -1,13 +1,7 @@
-function isEnoughCapacity(products, containerSize) {
 
-  let startProducts = 0;
-  const totalProducts = Object.values(products);
+const getUserNames = users => users.map(user => user.name);
 
-  for (let i = 0; i < totalProducts.length; i++) {
-      startProducts += totalProducts[i];
-  }
-  return startProducts <= containerSize;
-}
+
 
 
 console.log(
